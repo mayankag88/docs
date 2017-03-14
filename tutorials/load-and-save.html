@@ -74,7 +74,7 @@
         Handsontable.Dom.addEvent(load, 'click', function() {
           ajax('scripts/json/load.json', 'GET', '', function(res) {
             var data = JSON.parse(res.response);
-
+            alert(data);
             hot.loadData(data.data);
             exampleConsole.innerText = 'Data loaded';
           });
